@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.example.assignment5.dummy.DummyContent;
 
 /**
- * A fragment representing a single Recipe detail screen.
+ * A fragment representing a single recipe detail screen.
  * This fragment is either contained in a {@link RecipeListActivity}
  * in two-pane mode (on tablets) or a {@link RecipeDetailActivity}
  * on handsets.

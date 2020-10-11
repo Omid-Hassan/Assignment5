@@ -27,9 +27,12 @@ public class DummyContent {
 
     static {
         // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createDummyItem(i));
-        }
+//        for (int i = 1; i <= COUNT; i++) {
+//            addItem(createDummyItem(i));
+//        }
+        addItem(new DummyItem("1", "Frozen Zabaglione", "Marsala wine is the star of the show in this frozen treat. " +
+        "It gets mixed up with egg yolks, sugar, and salt over a double boiler until thickened before whipped cold heavy cream is folded in. " +
+                "Then it's wrapped, covered, and frozen! Easy, luxurious, and sure to please guests--and no ice cream machine is necessary"));
     }
 
     private static void addItem(DummyItem item) {
