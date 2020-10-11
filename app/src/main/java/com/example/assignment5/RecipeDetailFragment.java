@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.assignment5.dummy.DummyContent;
@@ -60,11 +61,37 @@ public class RecipeDetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.recipe_detail, container, false);
+        View rootView = inflater.inflate(R.layout.recipe_detail2, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.recipe_detail)).setText(mItem.details);
+        if (mItem.id.equals("1")) {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.frozon));
+        }
+        else if (mItem.id.equals("2"))
+        {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.chickenthighs));
+        }
+        else if (mItem.id.equals("3"))
+        {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.swimbiscuits));
+        }
+        else if (mItem.id.equals("4"))
+        {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.blueberrymuffins));
+        }
+        else if (mItem.id.equals("5"))
+        {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.sausage));
+        }
+        else if (mItem.id.equals("6"))
+        {
+            ((TextView) rootView.findViewById(R.id.recipe_detail2)).setText(mItem.details);
+            ((ImageView)rootView.findViewById(R.id.imgfood)).setImageDrawable(getResources().getDrawable(R.drawable.strawberry));
         }
 
         return rootView;
